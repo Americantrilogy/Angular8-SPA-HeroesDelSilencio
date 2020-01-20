@@ -1,0 +1,24 @@
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="assets/img/logo-heroes.png" width="100" alt="logo heroes del silencio">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link" [routerLink]="['inicio']">Inicio</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link" [routerLink]="['discografia']">Discografía</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0" (submit)="$event.preventDefault()">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar disco" aria-label="Search" (keydown.enter)="$event.preventDefault()" (keyup.enter)="buscarDisco(buscarTexto.value)" #buscarTexto>
+                <button (click)="buscarDisco(buscarTexto.value)" class="btn btn-outline-info my-2 my-sm-0" type="button">Buscar</button>
+            </form>
+        </div>
+    </nav>
+</div>

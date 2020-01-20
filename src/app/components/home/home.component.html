@@ -1,0 +1,43 @@
+<div class="bg-gris animated fadeIn fast">
+    <div class="container">
+        <div class="row p-5 bg-gris d-flex align-items-center">
+            <div class="col-12 col-lg-6 text-dark">
+                <h1 class="display-4">Hola Héroesmaniacos!</h1>
+                <hr>
+                <p class="font-weight-normal">Esta es una pequeña SPA (single page application) realizada con Angular y Bootstrap en sus últimas versiones que nos porporciona información respecto a la discografía oficial de las grabaciones originales de Héroes del silencio (no recopilatorios).</p>
+                <p>En ella encontrarás una descripción del álbum, fecha de lanzamiento, y una fotografía del disco.</p>
+                <blockquote class="blockquote text-right">
+                    <p class="mb-0">...Ya no puedo darte el corazón. Iré donde quieran mis botas y si quieres que te diga qué hay que hacer, te diré que apuestes por mi derrota...
+                    </p>
+                    <footer class="blockquote-footer">Apuesta por el Rock n' Roll. <cite title="Source Title">Álbum El Espíritu Del Vino</cite></footer>
+                </blockquote>
+            </div>
+            <div class="col-12 col-lg-6">
+                <img src="assets/img/heroes1.jpg" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container animated fadeIn fast">
+    <h2 class="display-4 text-center m-5">¿Quienes fueron los Héroes Del Silencio?</h2>
+    <div class="row d-flex align-items-center">
+        <div class="col">
+            <img src="assets/img/heroes.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-12 col-lg-6 text-dark">
+            <p class="font-weight-normal">Héroes del Silencio (a veces abreviado Héroes o por sus iniciales HDS) fue un grupo español de rock radicado en Zaragoza, formado inicialmente por Juan Valdivia (guitarra solista) y Enrique Bunbury (voz y guitarra rítmica), y completado con
+                Joaquín Cardiel (bajo) y Pedro Andreu (batería), a mediados de los años 80. Experimentaron un gran éxito en España e Hispanoamérica, así como en varios países europeos, incluyendo Alemania, Bélgica, Suiza, Francia e Italia, convirtiéndose
+                en uno de los grupos más exitosos de la historia del rock en español.​ Después de doce años en los que vendieron más de seis millones de discos en más de treinta y siete países, y en los que ofrecieron más de mil conciertos, la banda se
+                separó en 1996.​ Sus señas de identidad fueron una imagen muy característica, con una iconografía y simbología muy particulares, y una música caracterizada por unas letras ambiguas y trascendentales, arpegios complicados y una sólida base
+                rítmica.​ Entre sus influencias literarias se han citado escritores como William Blake y Charles Baudelaire,​ y entre las musicales a grupos como Led Zeppelin y The Cult.​ En 2007, conmemorando el vigésimo aniversario de sus primeras grabaciones
+                y once años después de su ruptura, anunciaron su regreso con una gira de diez conciertos en España y América, titulada genéricamente Héroes del Silencio Tour 2007. Después de la gira se separaron definitivamente.​</p>
+        </div>
+    </div>
+</div>
+
+<div class="container d-flex justify-content-center">
+    <div class="row m-5">
+        <button (click)="verDiscografia()" type="button" class="btn btn-success btn-lg">Ir a la discografía</button>
+        <!-- <a [routerLink]="['/discografia']" class="btn btn-success btn-lg">Ir a la discografía</a> -->
+    </div>
+</div>

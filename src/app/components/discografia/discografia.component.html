@@ -1,0 +1,27 @@
+<div class="animated fadeIn fast">
+    <h1 class="display-3 text-center my-4">Grabaciones originales de {{artista}}</h1>
+    <h2 class="text-center mb-4">1987 - 1996</h2>
+    <hr>
+    <div class="container">
+        <!-- <div class=" pt-5 pb-5"> -->
+        <!-- <div class="col-lg-6 col-12"> -->
+
+        <div class="card-group pt-5 pb-5">
+            <div class="col-lg-4 col-12" *ngFor="let disco of discografia; let i = index">
+                <div class="card">
+                    <img [src]="disco.cover" class="card-img-top" [alt]="disco.album">
+                    <div class="card-body">
+                        <h5 class="card-title">{{disco.album}}</h5>
+                        <!-- <p class="card-text">{{disco.description}}</p> -->
+                        <p class="card-text"><small class="text-muted">{{disco.date}}</small></p>
+                        <button (click)="verDisco(i)" class="btn btn-outline-info btn-block">Ver más</button>
+                        <!-- <a [routerLink]="['/disco', i]" class="btn btn-outline-info">Ver más</a> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- </div> -->
+        <!-- </div> -->
+    </div>
+</div>

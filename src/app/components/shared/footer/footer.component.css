@@ -1,0 +1,15 @@
+.footer {
+    background-color: rgb(32, 32, 32);
+    /* position: absolute;
+    bottom: 0; */
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: rgb(223, 223, 223);
+}

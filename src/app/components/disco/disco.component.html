@@ -1,0 +1,15 @@
+<div class="animated fadeIn fast">
+    <h1 class="display-3 text-center mt-4">Álbum: {{disco.album}}</h1>
+    <hr>
+    <div class="container">
+        <div class="row d-flex flex-column align-items-center">
+            <div class="col-12 col-lg-6">
+                <img src={{disco.cover}} alt={{disco.album}} title={{disco.album}} class="mb-4 img-fluid">
+            </div>
+            <h3 class="mb-4">Fecha de lanzamiento: {{disco.date}}</h3>
+            <p class="texto mb-5">{{disco.description}}</p>
+            <button (click)="volverDiscografia()" class="btn btn-info mb-5">Volver a la discografía</button>
+            <!-- <a [routerLink]="['/discografia']" class="btn btn-success btn-lg">Ir a la discografía</a> -->
+        </div>
+    </div>
+</div>
