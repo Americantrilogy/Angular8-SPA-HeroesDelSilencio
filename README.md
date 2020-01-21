@@ -1,4 +1,4 @@
-# Heroes del Silencio discografía - Angular 8 SPA con Bootsrap
+# Heroes del Silencio discografía - Angular 8 SPA con Bootstrap 4
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
 
