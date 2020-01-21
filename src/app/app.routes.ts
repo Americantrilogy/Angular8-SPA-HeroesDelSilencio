@@ -1,3 +1,4 @@
+import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 
@@ -17,4 +18,15 @@ const APP_ROUTES: Routes = [
 
 ];
 
-export const APP_ROUTING = RouterModule.forRoot(APP_ROUTES);
+@NgModule({
+    imports: [
+        RouterModule.forRoot(APP_ROUTES, {useHash: true})
+    ],
+    exports: [
+        RouterModule
+    ]
+
+})
+export class AppRoutingModule {}
+
+// export const APP_ROUTING = RouterModule.forRoot(APP_ROUTES);

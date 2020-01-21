@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { APP_ROUTING } from './app.routes';
+
+//rutas
+import { AppRoutingModule } from './app.routes';
 
 
 import { AppComponent } from './app.component';
@@ -28,7 +30,7 @@ import { BuscadorComponent } from './components/buscador/buscador.component';
   ],
   imports: [
     BrowserModule,
-    APP_ROUTING
+    AppRoutingModule
   ],
   providers: [
     DiscografiaService
