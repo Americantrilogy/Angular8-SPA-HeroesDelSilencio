@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23. 
 
-See this project working at https://americantrilogy.github.io/Angular8-Spa-HeroesDelSilencio/
+See this project working at https://americantrilogy.github.io/Angular8-SPA-HeroesDelSilencio/
 
 ## Development server
 
